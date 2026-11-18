@@ -7,13 +7,13 @@ import (
 
 func main() {
     
-    films, err := films.SearchFilms("victorwv")
+    films, err := films.SearchFilms("morguitaas")
     if err != nil {
-        fmt.Printf("Erro ao buscar filmes: %v\n", err)
+        fmt.Printf("error fetching films: %v\n", err)
         return
     }
 
-    fmt.Println("Filmes encontrados:")
+    fmt.Println("films found:")
     for _, film := range films {
         fmt.Printf("- %s\n", film.Title)
     }

@@ -1,34 +1,34 @@
 # Please Rewind
 
-Uma página que junta o que eu ando ouvindo e o que eu ando assistindo, em um lugar só.
+A page that brings together what I have been listening to and what I have been watching, in one place.
 
-Os dados vêm da Last.fm e do Letterboxd. A ideia é que qualquer pessoa possa colocar os dois nicks dela e ver a própria página, e também comparar com outra pessoa.
+The data comes from Last.fm and Letterboxd. The idea is that anyone can enter their own two usernames and see their own page, and also compare it with someone else's.
 
 ## Status
 
-Nada implementado ainda. Por enquanto só existe o desenho da tela e a decisão de stack.
+Nothing implemented yet. So far there is only the screen design and the choice of stack.
 
 ## Stack
 
 - Go
 - Vercel
 
-## De onde vêm os dados
+## Where the data comes from
 
-| Fonte | Como | Precisa de key |
+| Source | How | Needs a key |
 |---|---|---|
-| Last.fm | API oficial | sim |
-| Letterboxd | RSS do perfil (`letterboxd.com/<usuario>/rss/`) | não |
+| Last.fm | Official API | yes |
+| Letterboxd | Profile RSS feed (`letterboxd.com/<username>/rss/`) | no |
 
-O Letterboxd não tem API pública aberta, então o caminho é o RSS. Ele devolve os 50 itens mais recentes.
+Letterboxd has no open public API, so the way in is the RSS feed. It returns the 50 most recent entries.
 
-## URLs planejadas
+## Planned URLs
 
 ```
 victorwvm.com.br/rewind/<lastfm>/<letterboxd>
 victorwvm.com.br/rewind/<lastfm>/<letterboxd>/vs/<lastfm2>/<letterboxd2>
 ```
 
-## Janelas de tempo
+## Time windows
 
-30 dias, 90 dias, 365 dias e tudo. Batem com os `period` da Last.fm: `1month`, `3month`, `12month` e `overall`.
+30 days, 90 days, 365 days and everything. They match the Last.fm `period` values: `1month`, `3month`, `12month` and `overall`.

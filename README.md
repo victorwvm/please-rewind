@@ -29,6 +29,6 @@ victorwvm.com.br/rewind/<lastfm>/<letterboxd>
 victorwvm.com.br/rewind/<lastfm>/<letterboxd>/vs/<lastfm2>/<letterboxd2>
 ```
 
-## Time windows
+## Time window
 
 30 days, 90 days, 365 days and everything. They match the Last.fm `period` values: `1month`, `3month`, `12month` and `overall`.

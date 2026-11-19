@@ -11,7 +11,11 @@ type Channel struct {
 }
 
 type Item struct {
-	Title       string `xml:"title"`
+	FilmTitle   string `xml:"filmTitle"`
+	FilmYear    string `xml:"filmYear"`
+	MemberRating string `xml:"memberRating"`
+	PubDate    string `xml:"pubDate"`
+	Description  string `xml:"description"`
 	Link        string `xml:"link"`
 	Guid        string `xml:"guid"`
 }		

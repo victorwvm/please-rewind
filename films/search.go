@@ -24,7 +24,7 @@ func SearchFilms(nick string) ([]Item, error) {
 	items := dados.Channel.Items
 
 	if len(items) == 0 {
-		return nil, fmt.Errorf("nenhum item encontrado para %s", nick)
+		return nil, fmt.Errorf("no results found for %s", nick)
 	}
 	return items, nil
 }
